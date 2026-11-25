@@ -9,6 +9,7 @@ DEVICE_CODENAME := oriole
 DEVICE_PATH := device/google/raviole
 VENDOR_PATH := vendor/google/oriole
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
+-include vendor/priv-certs/keys/keys.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := $(DEVICE_CODENAME)
